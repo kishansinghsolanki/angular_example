@@ -1,0 +1,12 @@
+
+
+<div class="container">
+    <h3>file-upload works!</h3>
+    <div class="row">
+        <div class="col-12">
+            <h2>Show Image</h2>
+            <img [src]="this.url" width="200">
+            <input type="file" (change)="onselect($event)">
+        </div>
+    </div>
+<div>

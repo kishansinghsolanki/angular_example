@@ -1,0 +1,48 @@
+
+<div class="container">
+    <p>replay-subject works!</p>
+    <div class="row">
+        <div class="col">
+            <h4>Add Name</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <input type="text" class="form-control" #name>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-success" (click)="addName(name.value)">Add Name</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>User - 01</strong>
+            <hr>
+            <ul>
+                <li *ngFor="let item of user1List"><strong>Name : </strong> {{item}}</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <strong>User - 02</strong>
+            <hr>
+            <ul>
+                <li *ngFor="let item of user2List"><strong>Name : </strong> {{item}}</li>
+            </ul>
+            <button type="button" class="btn" [ngClass]="subscribeMode2? 'btn-danger':'btn-success'" (click)="user2Subscribe()">
+                {{subscribeMode2? 'UnSubscribe':'Subscribe'}}
+            </button>
+        </div>
+        <div class="col-md-4">
+            <strong>User - 03</strong>
+            <hr>
+            <ul>
+                <li *ngFor="let item of user3List"><strong>Name : </strong> {{item}}</li>
+            </ul>
+            <button type="button" class="btn" class="btn" [ngClass]="subscribeMode3? 'btn-danger':'btn-success'" (click)="user3Subscribe()">
+                {{subscribeMode3? 'UnSubscribe':'Subscribe'}}
+            </button>
+        </div>
+    </div>
+</div>

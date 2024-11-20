@@ -1,0 +1,47 @@
+<p>filter works!</p>
+<div style="width: 100%;">
+<div style="width: 32%;">Filter by length
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of data">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+        </tr>
+    </table>
+</div>
+<div style="width: 32%;">Filter by gender
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+        </tr>
+        <tr *ngFor="let item of data1">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.gender}}</td>
+        </tr>
+    </table>
+</div><div style="width: 32%;">Filter by salary
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+        </tr>
+        <tr *ngFor="let item of data2">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.gender}}</td>
+            <td>{{item.salary}}</td>
+        </tr>
+    </table>
+
+</div>
+</div>

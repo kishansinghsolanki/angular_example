@@ -1,0 +1,37 @@
+
+
+<div class="container">
+    <p>paging works!</p>
+    <h1>Bootstrap grid examples</h1>
+    <br>
+    <div class="row">
+        <div class="col-12">
+            <input type="text" (input)="search($event)">
+        </div>
+    </div>
+    <br>
+    
+    <div class="row" style="margin-bottom: 0rem important">
+        <div class="col-3">Id</div>
+        <div class="col-3">Name</div>
+        <div class="col-3">Gender</div>
+        <div class="col-3">Salary</div>
+      </div>
+
+    <!-- <div class="row" *ngFor="let item of datArr | paginate:{itemsPerPage:psize,currentPage:currentp} let i=index"> -->
+        <div class="row" *ngFor="let item of data | paginate : pagingConfig; let i = index">
+      <div class="col-3">{{item.id}}</div>
+      <div class="col-3">{{item.name}}</div>
+      <div class="col-3">{{item.gender}}</div>
+      <div class="col-3">{{item.salary}}</div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-12">
+            <!-- <pagination-controls (pageChange)="currentp=$event"></pagination-controls>  -->
+            <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
+  </pagination-controls>
+        </div>
+    </div>
+  </div>
