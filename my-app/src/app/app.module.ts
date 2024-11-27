@@ -16,6 +16,13 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { ExtraPageComponent } from './extra-page/extra-page.component';
 import { PromisePageComponent } from './promise-page/promise-page.component';
+import { TrackbyComponent } from './trackby/trackby.component';
+import { HostlistenerComponent } from './hostlistener/hostlistener.component';
+import { HostbindingComponent } from './hostbinding/hostbinding.component';
+import { HoverColorDirective } from './hover-color.directive';
+import { AlertBoxComponent } from './reusable/alert-box/alert-box.component';
+import { MyButtonComponent } from './reusable/my-button/my-button.component';
+import { ModelBoxComponent } from './reusable/model-box/model-box.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +38,14 @@ import { PromisePageComponent } from './promise-page/promise-page.component';
     AsyncSubjectComponent,
     ReplaySubjectComponent,
     ExtraPageComponent,
-    PromisePageComponent
+    PromisePageComponent,
+    TrackbyComponent,
+    HostlistenerComponent,
+    HostbindingComponent,
+    HoverColorDirective,
+    AlertBoxComponent,
+    MyButtonComponent,
+    ModelBoxComponent
   ],
   imports: [
     BrowserModule,

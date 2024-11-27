@@ -13,6 +13,11 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { ExtraPageComponent } from './extra-page/extra-page.component';
 import { PromisePageComponent } from './promise-page/promise-page.component';
+import { TrackbyComponent } from './trackby/trackby.component';
+import { HostlistenerComponent } from './hostlistener/hostlistener.component';
+import { HostbindingComponent } from './hostbinding/hostbinding.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'',pathMatch:'full'},
@@ -28,7 +33,13 @@ const routes: Routes = [
   {path:'asyncsubject',component:AsyncSubjectComponent},
   {path:'replaysubject',component:ReplaySubjectComponent},
   {path:'extrapage',component:ExtraPageComponent},
-  {path:'promisepage',component:PromisePageComponent}
+  {path:'promisepage',component:PromisePageComponent},
+  {path:'trackby',component:TrackbyComponent},
+  {path:'hostlistener',component:HostlistenerComponent},
+  {path:'hostbinding',component:HostbindingComponent},
+  {path:'parent',component:ParentComponent},
+  {path:'child',component:ChildComponent}
+  //{path:'common',component:CommonComponent,loadChildren:()=>import('./common/common.module').then(x=>x.CommonModule)}
 ];
 
 @NgModule({

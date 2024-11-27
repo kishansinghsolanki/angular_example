@@ -22,6 +22,7 @@ ngOnInit()
 
   addName(name:any)
   {
+    debugger;
     console.log(name);
     this.asyncNameEmit.next(name);
   }

@@ -1,0 +1,21 @@
+<div class="container" style="border-style: solid;" id="hostid">
+    <p>hostlistener works!</p>
+    <div class="row">
+        <app-alert-box [title]="'Alert'" [ErrorType]="'alert-danger'" [Content]="'this is alert box'"></app-alert-box>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4>Add Name</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <input type="text" class="form-control" #name>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-success">Add Name</button>
+        </div>
+    </div>
+    
+</div>
